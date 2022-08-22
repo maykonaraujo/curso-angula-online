@@ -1,3 +1,15 @@
-<app-header></app-header>
-<app-exercicio-data-binding></app-exercicio-data-binding>
+<app-header [titulo]="title"
+[subtitulo]="subtitulo"
+></app-header>
+<app-contador 
+[contador]="0"
+(avisaPai)="valorMudouNoContador($event)"
+></app-contador>
+<!-- 
+<app-exercicio-data-binding
+[palavra]="pudim"
+[color]="favoriteColor"
+(clicado)="eventoRecebido($event)"
+> -->
+<!-- </app-exercicio-data-binding> -->
 <app-footer></app-footer>

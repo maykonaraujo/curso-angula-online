@@ -1,3 +1,17 @@
+<button (click)="onClickBotaoEmissor($event)">Emitir informação de clique</button>
+
+<h1>Exemplos de Event Binding</h1>
+<button (click)="clicou($event)">Clique aqui</button>
+<br>
+<input type="text"  (keyup)="digitouAlgo($event)">
+<br>
+valor input: {{valorInput}}
+
+<hr>
+
+<h1>Exemplos de Property Binding:</h1>
+<h2>Palavra: {{palavra}}</h2>
+<h2>Cor: {{color}}</h2>
 <input type="text" [value]="initialValue">
 <br>
 <button [disabled]="isDisabled">Clique em mim!</button>
